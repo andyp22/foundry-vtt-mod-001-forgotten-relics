@@ -22,7 +22,7 @@ module.exports = (env) => {
     const isDevelopment = environment.mode === "development";
 
     const config = {
-        entry: "./src/foundryModule.ts",
+        entry: "./src/forgottenRelics.ts",
         watch: environment.watch,
         devtool: "inline-source-map",
         stats: "minimal",
