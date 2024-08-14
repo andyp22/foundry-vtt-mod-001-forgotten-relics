@@ -6,6 +6,8 @@
   "scripts": {
     "build": "webpack",
     "build:production": "webpack --mode production --env mode=production",
+    "format": "npm run prettier --write --list-different --no-error-on-unmatched-pattern",
+    "prettier": "prettier \"**/*.{js,json,md,mdx,ts,tsx,scss,css}\"",
     "start": "webpack serve --hot"
   },
   "repository": {},
