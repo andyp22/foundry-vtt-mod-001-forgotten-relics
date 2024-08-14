@@ -1,7 +1,7 @@
 {
-  "name": "foundry-vtt-module-template",
+  "name": "foundry-vtt-mod-001-forgotten-relics",
   "version": "1.0.0",
-  "description": "Foundry VTT Module Template",
+  "description": "Foundry VTT Module 001 - Forgotten Relics",
   "private": true,
   "scripts": {
     "build": "webpack",
