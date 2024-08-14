@@ -14,21 +14,11 @@
       "discord": "andyp22#1298"
     }
   ],
-  "dependencies": [
-
-  ],
-  "conflicts": [
-
-  ],
-  "esmodules": [
-    "module.js"
-  ],
-  "scripts": [
-
-  ],
-  "styles": [
-    "/styles/module.css"
-  ],
+  "dependencies": [],
+  "conflicts": [],
+  "esmodules": ["module.js"],
+  "scripts": [],
+  "styles": ["/styles/module.css"],
   "languages": [
     {
       "lang": "en",
