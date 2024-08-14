@@ -1,11 +1,14 @@
 import { TemplatePreloader } from "./module/helper/TemplatePreloader";
 
+console.log("Hello World! This code runs immediately when the file is loaded.");
+
 Hooks.once("init", async () => {
-    console.log("=============================HMR============================")
+    console.log("=============================HMR============================");
+    console.log("This code runs once the Foundry VTT software begins its initialization workflow.");
 });
 
 Hooks.once("ready", async () => {
-    
+    console.log("This code runs once core initialization is ready and game data is available.");
 });
 
 
