@@ -5,10 +5,10 @@
   "version": "0.0.1",
   "library": "false",
   "compatibility": {
-		"minimum": "12.330",
-		"verified": "12.330",
-		"maximum": "12"
-	},
+    "minimum": "12.330",
+    "verified": "12.330",
+    "maximum": "12"
+  },
   "minimumCoreVersion": "12",
   "compatibleCoreVersion": "12",
   "authors": [
@@ -19,7 +19,22 @@
     }
   ],
   "relationships": {
-    "requires": []
+    "requires": [
+      {
+        "id": "monks-active-tiles",
+        "type": "module",
+        "compatibility": {
+          "verified": "12.02"
+        }
+      },
+      {
+        "id": "tagger",
+        "type": "module",
+        "compatibility": {
+          "verified": "1.5.1"
+        }
+      }
+    ]
   },
   "esmodules": ["module.js"],
   "scripts": [],
