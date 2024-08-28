@@ -108,6 +108,15 @@ module.exports = (env) => {
           },
         ],
       }),
+      new CopyPlugin({
+        patterns: [
+          {
+            from: "packs",
+            to: "packs",
+            noErrorOnMissing: true,
+          },
+        ],
+      }),
     ],
   };
 

@@ -4,7 +4,7 @@
   "description": "Foundry VTT Module 001 - Forgotten Relics",
   "private": true,
   "scripts": {
-    "build": "webpack",
+    "build": "npm run prettier && webpack",
     "build:production": "webpack --mode production --env mode=production",
     "prettier": "prettier \"**/*.{js,json,md,mdx,ts,tsx,scss,css}\" --write --list-different --no-error-on-unmatched-pattern",
     "start": "webpack serve --hot"

@@ -1,6 +1,7 @@
 build
 dist
 out
+packs
 generated
 coverage
 .github

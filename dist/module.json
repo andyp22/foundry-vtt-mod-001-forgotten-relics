@@ -21,6 +21,11 @@
   "relationships": {
     "requires": [
       {
+        "id": "levels",
+        "type": "module",
+        "compatibility": {}
+      },
+      {
         "id": "monks-active-tiles",
         "type": "module",
         "compatibility": {
@@ -34,6 +39,13 @@
           "verified": "1.5.1"
         }
       }
+    ],
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {}
+      }
     ]
   },
   "esmodules": ["module.js"],
@@ -44,6 +56,43 @@
       "lang": "en",
       "name": "English",
       "path": "lang/en.json"
+    }
+  ],
+  "packs": [
+    {
+      "name": "journal-pack",
+      "label": "Journal Pack",
+      "path": "packs/journal-pack",
+      "type": "JournalEntry",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    },
+    {
+      "name": "adventure-pack",
+      "label": "Adventure Pack",
+      "path": "packs/adventure-pack",
+      "type": "Adventure",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Forgotten Relics",
+      "sorting": "a",
+      "color": "#ffa200",
+      "ownership": {
+        "PLAYER": "NONE"
+      },
+      "packs": ["journal-pack", "adventure-pack"]
     }
   ],
   "url": "https://github.com/andyp22/foundry-vtt-mod-001-forgotten-relics",
