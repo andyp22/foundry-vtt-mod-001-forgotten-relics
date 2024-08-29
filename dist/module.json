@@ -2,7 +2,7 @@
   "name": "foundry-vtt-mod-001-forgotten-relics",
   "title": "Foundry VTT Module 001 - Forgotten Relics",
   "description": "",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "library": "false",
   "compatibility": {
     "minimum": "12.330",
@@ -72,10 +72,46 @@
       "flags": {}
     },
     {
+      "name": "rollable-table-pack",
+      "label": "Rollable Table Pack",
+      "path": "packs/rollable-table-pack",
+      "type": "RollTable",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    },
+    {
       "name": "adventure-pack",
       "label": "Adventure Pack",
       "path": "packs/adventure-pack",
       "type": "Adventure",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    },
+    {
+      "name": "macro-pack",
+      "label": "Macro Pack",
+      "path": "packs/macro-pack",
+      "type": "Macro",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      },
+      "system": "dnd5e",
+      "flags": {}
+    },
+    {
+      "name": "playlist-pack",
+      "label": "Playlist Pack",
+      "path": "packs/playlist-pack",
+      "type": "Playlist",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
@@ -92,7 +128,13 @@
       "ownership": {
         "PLAYER": "NONE"
       },
-      "packs": ["journal-pack", "adventure-pack"]
+      "packs": [
+        "journal-pack",
+        "adventure-pack",
+        "macro-pack",
+        "playlist-pack",
+        "rollable-table-pack"
+      ]
     }
   ],
   "url": "https://github.com/andyp22/foundry-vtt-mod-001-forgotten-relics",
